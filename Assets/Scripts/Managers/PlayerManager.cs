@@ -7,12 +7,14 @@ public class PlayerManager : MonoBehaviour {
 	private Walk walkBehavior;
 	private Animator animator;
 	private CollisionState collisionState;
+	private Duck duckBehavior;
 
 	void Awake(){
 		inputState = GetComponent<InputState>();
 		walkBehavior = GetComponent<Walk>();
 		animator = GetComponent<Animator>();
 		collisionState = GetComponent<CollisionState>();
+		duckBehavior = GetComponent<Duck>();
 	}
 
 	// Use this for initialization
@@ -34,8 +36,11 @@ public class PlayerManager : MonoBehaviour {
 			ChangeAnimationState(2);
 		}
 
-
 		animator.speed = walkBehavior.running ? walkBehavior.runMultiplier : 1;
+
+		if(duckBehavior.ducking){
+			ChangeAnimationState(3);
+		}
 	}
 
 	void ChangeAnimationState(int value){
