@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AbstractBehavior.cs" />
+     <Compile Include="Assets\Scripts\FaceDirection.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
      <Compile Include="Assets\Scripts\InputState.cs" />
      <Compile Include="Assets\Scripts\SimpleMovement.cs" />
