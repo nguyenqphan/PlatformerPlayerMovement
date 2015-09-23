@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Behaviors\FaceDirection.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SimpleMovement.cs" />
      <Compile Include="Assets\Scripts\Behaviors\Walk.cs" />
+     <Compile Include="Assets\Scripts\Collisions\CollisionState.cs" />
      <Compile Include="Assets\Scripts\Input\InputManager.cs" />
      <Compile Include="Assets\Scripts\Input\InputState.cs" />
      <Compile Include="Assets\Scripts\Managers\PlayerManager.cs" />
