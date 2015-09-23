@@ -14,10 +14,14 @@ public class FaceDirection : AbstractBehavior {
 		var left = inputState.GetButtonValue (inputButtons[1]);
 	
 		if(right){
-			Debug.Log("Facing Right");
+			//Debug.Log("Facing Right");
+			inputState.direction = Direction.Right;
 		}
 		else if(left){
-			Debug.Log("Facing Left");
+			//Debug.Log("Facing Left");
+			inputState.direction = Direction.Left;
 		}
+
+		transform.localScale = new Vector3((float)inputState.direction, 1, 1);
 	}
 }
