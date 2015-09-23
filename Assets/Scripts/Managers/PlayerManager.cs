@@ -9,7 +9,7 @@ public class PlayerManager : MonoBehaviour {
 
 	void Awake(){
 		inputState = GetComponent<InputState>();
-		walkBehavior = GetComponent<>(Walk);
+		walkBehavior = GetComponent<Walk>();
 		animator = GetComponent<Animator>();
 	}
 
@@ -27,6 +27,8 @@ public class PlayerManager : MonoBehaviour {
 		if(inputState.absVelX > 0){
 			ChangeAnimationState(1);
 		}
+
+		animator.speed = walkBehavior.running ? walkBehavior.runMultiplier : 1;
 	}
 
 	void ChangeAnimationState(int value){
