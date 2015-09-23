@@ -13,9 +13,10 @@ public class Jump : AbstractBehavior {
 	// Update is called once per frame
 	void Update () {
 		var canJump = inputState.GetButtonValue (inputButtons[0]);
+		var holdTime = inputState.GetButtonHoldTime (inputButtons[0]);
 
 		if(collisionState.standing){
-			if(canJump){
+			if(canJump && holdTime < .1f){
 				OnJump();
 			}
 		}
