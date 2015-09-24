@@ -55,10 +55,12 @@
      <Compile Include="Assets\Scripts\Behaviors\Walk.cs" />
      <Compile Include="Assets\Scripts\Behaviors\WallJump.cs" />
      <Compile Include="Assets\Scripts\Behaviors\WallSlide.cs" />
+     <Compile Include="Assets\Scripts\Collisions\Collectable.cs" />
      <Compile Include="Assets\Scripts\Collisions\CollisionState.cs" />
      <Compile Include="Assets\Scripts\Effects\DustEffect.cs" />
      <Compile Include="Assets\Scripts\Input\InputManager.cs" />
      <Compile Include="Assets\Scripts\Input\InputState.cs" />
+     <Compile Include="Assets\Scripts\Items\PowerUpFlower.cs" />
      <Compile Include="Assets\Scripts\Managers\PlayerManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
