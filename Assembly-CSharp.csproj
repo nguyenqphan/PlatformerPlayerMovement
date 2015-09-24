@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Behaviors\SimpleMovement.cs" />
      <Compile Include="Assets\Scripts\Behaviors\StickToWall.cs" />
      <Compile Include="Assets\Scripts\Behaviors\Walk.cs" />
+     <Compile Include="Assets\Scripts\Behaviors\WallSlide.cs" />
      <Compile Include="Assets\Scripts\Collisions\CollisionState.cs" />
      <Compile Include="Assets\Scripts\Effects\DustEffect.cs" />
      <Compile Include="Assets\Scripts\Input\InputManager.cs" />
