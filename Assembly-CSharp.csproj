@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Behaviors\Jump.cs" />
      <Compile Include="Assets\Scripts\Behaviors\LongJump.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SimpleMovement.cs" />
+     <Compile Include="Assets\Scripts\Behaviors\StickToWall.cs" />
      <Compile Include="Assets\Scripts\Behaviors\Walk.cs" />
      <Compile Include="Assets\Scripts\Collisions\CollisionState.cs" />
      <Compile Include="Assets\Scripts\Effects\DustEffect.cs" />
