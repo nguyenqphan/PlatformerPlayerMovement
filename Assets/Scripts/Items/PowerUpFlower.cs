@@ -3,13 +3,13 @@ using System.Collections;
 
 public class PowerUpFlower : Collectable {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public int itemId = 1;
+
+	override protected void OnCollect(GameObject target){
+
+		var equipBehavior = target.GetComponent <Equip>();
+		if(equipBehavior != null){
+			equipBehavior.currentItem = itemId;
+		}
 	}
 }
